@@ -65,7 +65,7 @@ elif data['manifestType'] == 'minecraftModpack':
     download(mods, folder)
 
     print()
-    input(f"{Fore.LIGHTBLUE_EX}Everything done for now! :)\nPress any key to exit...")
+    input(f"{Fore.LIGHTBLUE_EX}Everything done for now! :)\nPress return key to exit...")
 
 else:
     print("This is not a modpack manifest!")
