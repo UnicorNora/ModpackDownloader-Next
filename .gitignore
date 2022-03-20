@@ -1,0 +1,4 @@
+mods/
+bin/
+__pycache__/
+*.spec
