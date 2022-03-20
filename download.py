@@ -69,8 +69,13 @@ elif data['manifestType'] == 'minecraftModpack':
         manifest = response.json()['data']
         for a in manifest:
             if f['fileID'] == a['id']:
-                mods.append(a['downloadurl'])
-                mods.append(a['filename'])
+                def loopDL():
+                    try: 
+                        mods.append(a['downloadurl'])
+                        mods.append(a['filename'])
+                    except:
+                        loopDL()
+
         i += 1
 
     print(f"{Fore.GREEN}File list generated! [{i}/{n}] ✅                           {Style.RESET_ALL}\n")
